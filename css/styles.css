@@ -56,7 +56,7 @@ a:hover, a:focus{
 
 .navigation-list{
     display: flex;
-    gap: 40px
+    gap: 40px;
 }
 
 .navigation-link{
@@ -66,9 +66,15 @@ a:hover, a:focus{
     line-height: 1.5;
     color: #2e2f42;
     padding: 24px 0;
+    transition-property: color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-link::after {
+.active{
+    color: #404bbf;
+}
+
+.navigation-link.active::after {
     content: "";
     position: absolute;
     left: 0;
@@ -77,11 +83,6 @@ a:hover, a:focus{
     height: 4px;
     background-color: #404BBF;
     border-radius: 2px;
-    transform: scaleX(0);
-}
-
-.navigation-link.active::after {
-    transform: scaleX(1);
 }
 
 .logo{
@@ -107,9 +108,15 @@ a:hover, a:focus{
     line-height: 1.5;
 }
 
+
 .address-list{
     display: flex;
     gap: 40px;
+}
+
+.contact-link {
+    transition-property: color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero{
@@ -158,6 +165,8 @@ a:hover, a:focus{
     letter-spacing: 0.04em;
     color: #FFFFFF;
     cursor: pointer;
+    transition-property: background-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover, .hero-button:focus{
