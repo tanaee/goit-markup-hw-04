@@ -195,6 +195,23 @@ a:hover, a:focus{
     gap: 24px;
 }
 
+.qualities-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+}
+
 .qualities-item{
     width: calc((100% - 72px) / 4 );
 }
