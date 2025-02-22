@@ -375,7 +375,7 @@ a:hover, a:focus{
     transform: translateY(100%)
 }
 
-.overlay:hover .overlay-text{
+.portfolio-item:hover .overlay-text{
     transform: translateY(0);
 }
 
